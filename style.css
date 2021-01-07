@@ -1,0 +1,607 @@
+/*
+
+sections
+
+    1. Header Section
+        1.1 Header Container
+        1.2 Logo Area 
+        1.3 Login-area
+            1.3.1 Username Area
+            1.3.2 Password Area
+            1.3.3 Submit Area
+    
+    2. Main Section
+        2.1 Main Area Container
+        2.2 Mobile Area
+        2.3 Sign Up Area
+
+    3. Footer Section
+        3.1 Footer Container
+        3.2 Footer Top
+        3.3 Footer Bottom
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*############ 1. Header Section ############*/
+
+header {
+    background: #3E5C99;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+
+/*### 1.1 Header Container ###*/
+
+.container {
+    width: 100%;
+	margin: auto;
+	max-width: 960px;
+}
+
+
+
+
+/*### 1.2 Logo Area ###*/
+
+header .logo-area {
+    width: 30%;
+    float: left;
+    
+}
+
+header .logo-area img {
+    margin-top: 20px;
+}
+
+
+
+
+/*### 1.3 Login-area ###*/
+
+header .login-area {
+    width: 70%;
+    float: right;
+}
+
+.login-area form {
+    float: right;
+    margin-right: 20px;
+}
+
+header .login-area .username-area > label,
+header .login-area .password-area > label {
+    display: block;
+}
+
+header .login-area label:hover {
+    cursor: pointer;
+}
+
+header .login-area label[for="keep"] {
+    color: #9CB4D8;
+}
+
+
+
+
+/*### 1.3.1 Username Area ###*/
+
+header .login-area .username-area {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+header .login-area .username-area input[type="checkbox"] {
+    margin: 0;
+}
+
+header .username-area input[type="text"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #29487D;
+    padding: 3px;
+}
+
+
+
+
+/*### 1.3.2 Password Area ###*/
+
+header .login-area .password-area {
+    overflow: hidden;
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+header .login-area .password-area a {
+    display: block;
+    color: #9CB4D8;
+    text-decoration: none;
+}
+
+header .login-area .password-area a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .password-area input[type="password"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #29487D;
+    padding: 3px;
+}
+
+
+
+
+/*### 1.3.3 Submit Area ###*/
+
+header .login-area .submit-area {
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+header .submit-area input {
+    margin-top: 20px;
+    color: white;
+    background: #365899;
+    border: 1px solid #29487D;
+    padding: 3px;
+    font-weight: 600;
+}
+
+header .submit-area input:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*############ 2. Main Section ############*/
+
+.main-area {
+    background: linear-gradient(#FFFFFF, #D4D9E9);
+    font-family: tahoma, arial;
+    overflow: hidden;
+}
+
+.main-area p {
+    font-size: 12px;
+    color: #9197AD;
+}
+ 
+
+
+
+/*### 2.1 Main Area Container ###*/
+
+.main-area-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+
+
+
+/*### 2.2 Mobile Area ###*/
+
+.mobile {
+    margin-top: 40px;
+    background: url('images/background.png') no-repeat;
+    background-position: left bottom;
+    min-height: 290px;
+    background-size: 100% auto;
+}
+
+.mobile-area {
+    width: 50%;
+    float: left;
+    margin-right: 8%;
+}
+
+.mobile-image {
+    float: left;
+    margin-right: 20px;
+    margin-left: 60px;
+}
+
+.mobile-text {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.mobile-text h4 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #23355B;
+}
+
+.mobile-text p,
+.mobile-text h4 {
+    margin: 0;
+}
+
+.mobile-text a {
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #000000;
+    padding: 2px 3px;
+    margin-top: 60px;
+    background: linear-gradient(#FFFFFF, #E6E6E6);
+}
+
+
+
+
+/*### 2.3 Sign Up Area ###*/
+
+.signup-area {
+    width: 40%;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.signup-area h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+.signup-area h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+}
+
+.signup-area form {
+    margin-top: 20px;
+}
+
+.signup-area form p a {
+    text-decoration: none;
+    color: #3A8AD1;
+}
+
+.signup-area form p a:hover {
+    text-decoration: underline;
+}
+
+.signup-area input[type="text"],
+.signup-area input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #C1CADA;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.signup-area input[type="text"]:first-child {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.signup-area input[type="text"]:nth-child(2) {
+   width: 48%;
+   overflow: hidden;
+}
+
+.signup-area .birth {
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.signup-area .birth select {
+    padding: 6px 4px;
+    border: 1px solid #DDEDFC;
+    float: left;
+    margin-right: 5px;
+}
+
+.signup-area .birth a {
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    color: #3A8AD1;
+}
+
+.signup-area .birth a:hover {
+    text-decoration: underline;
+}
+
+.signup-area form input[type="radio"] {
+    margin: 0;
+    margin-right: 5px;
+}
+
+.signup-area form label[for="female"] {
+    margin-right: 5px;
+}
+
+.signup-area form label[for="female"],
+.signup-area form label[for="male"]:hover {
+    cursor: pointer;
+}
+
+.signup-area input[type="submit"] {
+    background: linear-gradient(#5F944B, #74B25F);
+    border: 1px solid #64994C;
+    padding: 6px 65px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.signup-area input[type="submit"]:hover {
+     background: linear-gradient(#588944, #83C46C);
+}
+
+.signup-area hr {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #B5BCCF;
+}
+
+.signup-area .page {
+    font-size: 16px;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.signup-area .page a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #6AA1EA;
+}
+
+.signup-area .page a:hover {
+    text-decoration: underline;
+}
+
+
+
+    
+/*############ 3. Footer Section ############*/
+
+.footer-area {
+    font-family: tahoma;
+    font-size: 12px;
+}
+
+.footer-area ul li {
+    float: left;
+}
+
+.footer-area ul li a {
+    text-decoration: none;
+    color: #60aeec;
+}
+
+.footer-area ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.footer-top, 
+.footer-bottom {
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.footer-area hr {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #B5BCCF;
+}
+
+
+
+
+/*### 3.2 Footer Top ###*/
+
+.footer-area .container {
+    width: 96%;
+    margin: auto;
+    max-width: 960px;
+}
+
+/*### 3.2 Footer Top ###*/
+
+.footer-top ul li {
+    margin-right: 12px;
+}
+
+.footer-top ul li:last-child a {
+    background: #EDF0F5;
+    padding: 2px 8px;
+    text-decoration: none;
+}
+
+.footer-top ul li:last-child a:hover {
+    background: #D8DDEB;
+}
+
+
+
+
+/*### 3.3 Footer Bottom ###*/
+
+.footer-bottom ul {
+    width: 100%;
+}
+
+.footer-bottom ul li {
+    margin-right: 0;
+    width: 10%;
+    margin-bottom: 5px;
+}
+
+.copyright p {
+    margin: 15px 0 0 0;
+    padding-bottom: 4px;
+    color: #A497AD;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #60aeec;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/*### Media Query For Responsive Web Design ###*/
+
+@media all and (max-width: 768px ) {
+	
+    header .logo-area {
+		float: none;
+		margin-bottom: 20px;
+		text-align: center;
+		width: 100%;
+	}
+	
+    header .login-area {
+        float: none;
+		width: 368px;
+		margin: auto;
+	}
+    
+    header .login-area .password-area {
+        float: none;
+        padding: 0;
+    }
+    
+    header .login-area .submit-area input {
+        width: 220px;  
+    }
+    
+    header .login-area .submit-area {
+        float: left;
+        margin: 0 0 0 40px;
+    }
+    
+    .mobile-area {
+        width: 70%;
+        float: none;
+        
+    }
+    
+    .signup-area {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden; 
+        padding: 0;
+    }
+    
+    .footer-top ul,
+	.footer-bottom ul {
+		width: 100%;
+	}
+    
+	.footer-top ul li,
+	.footer-bottom ul li {
+		width: auto;
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+    
+}
+
+
+
+@media all and (max-width: 430px ) {
+    
+    
+    header .login-area {
+        float: none;
+        width: 100%;
+    }
+    
+    .login-area form {
+        float: none;
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    
+    header .login-area .username-area {
+        float: none;
+        margin-bottom: 20px;
+        width: 100%;
+   
+    }
+    
+    header .login-area .password-area {
+        float: none; 
+        width: 100%;
+    }
+    
+    header .login-area .submit-area{
+        float: none;
+        margin-left: 0;
+    }
+    
+     header .login-area .submit-area input {
+        width: 40%;
+    }
+    
+    .login-area input[type="text"],
+	.login-area input[type="password"] {
+		width: 90%;
+	}
+    
+    .mobile-area {
+        width: 96%;
+        float: none;   
+    }
+    
+    .signup-area {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+
+}
+
+    
+
+
